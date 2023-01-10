@@ -1,0 +1,214 @@
+
+
+.topimg{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    z-index: -99;
+   
+}
+.topdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.rightimg{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    top: 5%;
+   
+}
+    
+.logo{
+    position: fixed;
+    width: 150px;
+    top: 0px;
+    left:10;
+}
+    
+
+.titlediv{
+    /* border: "1px solid black"; */
+    position: absolute;
+    width: 50%;
+    top:30%;
+    left:5%;
+    color: black;
+}
+.titlediv span{
+    font-family: sans-serif;
+    
+}
+
+.titlediv button{
+    background:#3866F5;
+   color:white;
+   padding: 15px;
+   margin-top: 10px;
+   font-weight: 600;
+}
+.titlediv h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.grubhub{
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    right: 28%;
+    top: 3%;
+    z-index: 99;
+}
+.uber{
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    z-index: 99;
+
+}
+.outlet{
+
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    right: 41%;
+    top: 35%;
+    z-index: 99;
+
+}
+
+.amazon{
+
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 99;
+
+}
+.swiggy{
+
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    left: 15%;
+    top: 88%;
+    z-index: 99;
+
+}
+
+.zomato{
+    width: 5%;
+    /* height: 10%; */
+    position: absolute;
+    right: 44%;
+    top: 80%;
+    z-index: 99;
+}
+
+.imgdiv{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    position: absolute;
+    visibility: hidden;
+  
+    
+}
+
+.imgdiv img {
+    margin: 5px;
+    width: 70%;
+}
+
+.button-style{
+    width: 20%;
+    position: relative;
+    margin-top: 5%;
+    left: 15%;
+}
+
+.top-style{
+    display: none;;
+}
+
+
+@media only screen and (max-width: 900px){
+    /*Tablets [601px -> 1200px]*/
+    .rightimg{
+        /* flex-direction: column; */
+        top: 40%;
+    }
+    .grubhub, .amazon, .outlet, .swiggy, .uber, .zomato {
+        display: none;
+    }
+    .imgdiv{
+        visibility: visible;
+    }
+    .topimg{
+        height: 600px;
+        width: 100%;
+        
+    }
+
+    .titlediv button{
+        padding: 10px;
+        
+    }
+    .top-style{
+        display: block;
+        width: 5%;
+        position: absolute;
+        right: 45%;
+        top: 35%;
+        z-index: 99;
+    }
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    
+
+    .rightimg{
+        /* position: relative; */
+        top: 50%;
+    }
+    .topimg{
+        height: 500px;
+        width: 100%;
+        /* position: relative; */
+      
+    }
+    .titlediv{
+        width: 80%;
+        top:10%;
+        left:5%;
+        color: black;
+
+    }
+    .titlediv h3{
+        font-size: 18px;
+    }
+
+    .top-style{
+        display: block;
+        width: 5%;
+        position: absolute;
+        right: 45%;
+        top: 45%;
+        z-index: 99;
+    }
+}
